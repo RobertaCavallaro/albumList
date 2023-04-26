@@ -1,0 +1,23 @@
+body {
+  background-color: antiquewhite;
+}
+#fmSaveAlbum {
+  background-color: aqua;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 2em;
+}
+/* find a <form> with an ID, and then a <label> inside */
+#fmSaveAlbum label {
+  float: left;
+  width: 7em;
+}
+#fmSaveAlbum input[type="text"],
+#fmSaveAlbum input[type="number"],
+#fmSaveAlbum textarea {
+  width: 250px;
+}
+
+#fmSaveAlbum input[type="reset"] #fmSaveAlbum input[type="submit"] {
+  padding-top: 2em;
+}

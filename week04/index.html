@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Music</h1>
+    <!-- INPUT -->
+    <form id="fmSaveAlbum">
+      <fieldset>
+        <legend>Required</legend>
+        <label> Album Artist: </label>
+        <input type="text" placeholder="Garbage" required id="inAlbumArtist" />
+        <br />
+        <label>Album Name:</label>
+        <input
+          type="text"
+          placeholder="Version 2.0"
+          required
+          id="inAlbumTitle"
+        />
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Optional</legend>
+        <label>Album Year:</label>
+        <input type="number" placeholder="1998" id="inAlbumYear" /> <br />
+        <label> Album Notes:</label>
+        <textarea placeholder="Second Album" id="inAlbumNotes"></textarea>
+      </fieldset>
+
+      <input type="reset" value="Cancel" />
+      <input type="submit" value="Save" />
+    </form>
+
+    <hr />
+    <!-- OUTPUT -->
+    <form id="fmShowAlbum">
+      <input type="submit" value="Get Album" />
+    </form>
+
+    <div id="divShowAlbum">placeholder</div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
